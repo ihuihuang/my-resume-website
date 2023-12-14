@@ -1,0 +1,62 @@
+.basicInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+  }
+  
+  .textSection {
+    flex-basis: 50%;
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff; /* Use your theme color */
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .photoSection {
+    flex-basis: 50%;
+    position: relative;
+  }
+  
+  .portrait {
+    width: 100%;
+    /*height: 300px; /* Adjust based on actual image size */
+    /*background-color: #f0f0f0; /* Placeholder color */
+    position: absolute;
+    right: -50px; /* Adjust the overlap */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  /* Responsive styles if needed */
+  @media (max-width: 768px) {
+    .basicInfo {
+      flex-direction: column;
+      height: auto; /* Height adjusts to content on small screens */
+    }
+    
+    .photoSection {
+      order: -1; /* Photo comes first on smaller screens */
+    }
+    
+    .portrait {
+      position: static;
+      width: 100%;
+    }
+  }
+  
