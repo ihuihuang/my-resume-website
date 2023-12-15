@@ -3,7 +3,7 @@ import styles from './ProfessionalExperience.module.css';
 
 const ProfessionalExperience: React.FC = () => {
   return (
-    <div className={styles.professionalExperience} id="professional-experience">
+    <div className={`${styles.professionalExperience} section`} id="professional-experience">
       <h2>Professional Experience</h2>
       <div>
         <h3>FFFFFFFFFF - Software Engineer (Remote, Sep. 20XX - Jun. 20XX)</h3>

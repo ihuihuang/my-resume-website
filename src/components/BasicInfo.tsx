@@ -10,7 +10,7 @@ const BasicInfo: React.FC = () => {
         element?.scrollIntoView({ behavior: 'smooth' });
       };
   return (
-    <div className={styles.basicInfo}>
+    <div className={`${styles.basicInfo} section`}>
       <div className={styles.textSection}>
         <h1>My Name</h1>
         <p className={styles.title}>Title</p>

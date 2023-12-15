@@ -7,7 +7,7 @@ import './App.css'; // Assuming you have some global styles
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="container">
       <header className="App-header">
         {/* You can add a header component or navigation here */}
       </header>

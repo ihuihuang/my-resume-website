@@ -3,7 +3,7 @@ import styles from './Education.module.css';
 
 const Education: React.FC = () => {
   return (
-    <div className={styles.education} id="education">
+    <div className={`${styles.education} section`} id="education">
       <h2>Education</h2>
       <ul>
         <li>
